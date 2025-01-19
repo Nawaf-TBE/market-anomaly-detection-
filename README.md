@@ -1,69 +1,87 @@
-# Welcome to your Lovable project
+# Market Anomaly Detection Project
 
-## Project info
+## Overview
+A sophisticated market monitoring system powered by AI to detect anomalies and provide real-time investment insights.
 
-**URL**: https://lovable.dev/projects/de945789-68b5-4120-91e4-a1d4316e7be5
+## Features
+- Real-time market monitoring
+- AI-powered anomaly detection
+- Investment strategy recommendations
+- Historical data analysis
+- Interactive data visualization
 
-## How can I edit this code?
+## Getting Started
 
-There are several ways of editing your application.
+### Prerequisites
+- Node.js (recommended version 16 or higher)
+- npm or yarn package manager
 
-**Use Lovable**
+### Installation
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/de945789-68b5-4120-91e4-a1d4316e7be5) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
+1. Clone the repository
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+git clone <YOUR_REPOSITORY_URL>
+cd market-anomaly-detection
 ```
 
-**Edit a file directly in GitHub**
+2. Install dependencies
+```sh
+npm install
+# or
+yarn install
+```
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+3. Start the development server
+```sh
+npm run dev
+# or
+yarn dev
+```
 
-**Use GitHub Codespaces**
+The application will be available at `http://localhost:8080`
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Building for Production
 
-## What technologies are used for this project?
+```sh
+npm run build
+# or
+yarn build
+```
 
-This project is built with .
+## Deployment
 
-- Vite
-- TypeScript
+This project can be deployed to various platforms:
+
+### Netlify
+1. Connect your GitHub repository
+2. Set build command: `npm run build`
+3. Set publish directory: `dist`
+
+### Vercel
+1. Import your GitHub repository
+2. Vercel will automatically detect the correct settings
+3. Deploy
+
+### GitHub Pages
+1. Enable GitHub Pages in your repository settings
+2. Add the following to your GitHub Actions workflow:
+```yaml
+- name: Build
+  run: npm run build
+```
+
+### AWS Amplify
+1. Connect your repository
+2. Follow the automatic build settings
+3. Deploy
+
+## Technologies Used
 - React
-- shadcn-ui
+- TypeScript
+- Vite
+- shadcn/ui
 - Tailwind CSS
+- Recharts for data visualization
 
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/de945789-68b5-4120-91e4-a1d4316e7be5) and click on Share -> Publish.
-
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
